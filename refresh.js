@@ -3,11 +3,14 @@
 	var omg = document.getElementById('omg');
 	var seq = null;
 	function reset_seq() {
-		seq = [51, 16, 75, 73, 83, 83, 77, 89, 65, 82, 83];
+		seq = [51, 75, 73, 83, 83, 77, 89, 65, 82, 83];
 	}
 	reset_seq();
 
 	document.addEventListener('keyup', function(e) {
+		if (e.keyCode == 16) {
+			return;
+		}
 		if (seq[0] == e.keyCode) {
 			seq.shift();
 		} else {
