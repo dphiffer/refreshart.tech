@@ -1,0 +1,173 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 1.15em;
+	line-height: 1.3em;
+	margin: 0;
+	background: #ffd0e5;
+	background-repeat: no-repeat;
+	background-position: -250px 0;
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+}
+
+body::after {
+	content: "";
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border-top: 4px solid #E82678;
+}
+
+a {
+	color: #450220;
+	border-bottom: 1px solid rgba(232, 38, 120, 0.5);
+	box-shadow: 0px -3px 0px rgba(232, 38, 120, 0.5) inset;
+	text-decoration: none;
+}
+
+html.canhover a {
+	transition: 0.1s ease-out all;
+}
+
+html.canhover a:hover {
+	border-color: rgba(232, 38, 120, 1);
+	box-shadow: 0px -3px 0px rgba(232, 38, 120, 1) inset;
+}
+
+h1 {
+	margin-top: 1.5em;
+}
+
+h1, .big {
+	font-size: 1.5em;
+	line-height: 1.1em;
+	color: #E82678;
+}
+
+.blue {
+	color: #2b38b7;
+}
+
+.big {
+	font-style: italic;
+	color: #E82678;
+}
+
+.smallcaps {
+	font-size: 0.9em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+figure {
+	margin: 0;
+}
+
+#infographic img {
+	width: 100%;
+	height: auto;
+	border: 4px solid #E82678;
+}
+
+#content {
+	width: 100%;
+	padding: 16px 16px 5em 16px;
+	max-width: 768px;
+	margin: 0 auto;
+}
+
+#cta {
+	border-top: 4px solid #E82678;
+	padding-top: 0.25em;
+	padding-bottom: 0.75em;
+	background: rgba(255, 255, 255, 0.75);
+}
+
+.bg {
+	background: #ffd0e5;
+	border-top: 4px solid #ffd0e5;
+	border-left: 4px solid #ffd0e5;
+	border-right: 4px solid #ffd0e5;
+}
+
+#omg {
+	position: absolute;
+	left: 290px;
+	top: 77px;
+	font-size: 70px;
+}
+
+#omg a {
+	border: none;
+	box-shadow: none;
+}
+
+#omg .omg {
+	display: none;
+}
+
+#omg .var0 {
+	display: inline;
+	opacity: 0;
+}
+
+ul li {
+	list-style: square;
+	margin-top: 0.5em;
+}
+
+body.omg #omg .var0 {
+	display: none;
+}
+body.omg-var1 #omg .var1 { display: inline; }
+body.omg-var2 #omg .var2 { display: inline; }
+body.omg-var3 #omg .var3 { display: inline; }
+
+body.omg {
+	background-image: url('golden-nica-50.png');
+}
+
+#omg {
+	display: none;
+}
+
+body.omg #omg {
+	display: block;
+}
+
+body.omg #omg::after {
+	content: "omg where is my head??";
+	font-size: 24px;
+	font-weight: bold;
+	font-style: italic;
+	background: #ffd0e5;
+}
+
+p.big {
+	margin: 1.5em 0;
+}
+
+@media (min-width: 769px) {
+	
+	body {
+		font-size: 1.5em;
+		line-height: 1.5em;
+		background-image: url('golden-nica.png');
+	}
+
+	h1 {
+		margin-top: 8em;
+	}
+	
+	#omg {
+		display: block;
+	}
+
+}
