@@ -1,0 +1,323 @@
+/**
+
+*   Brand assets designed by Carlie Zhang, Kar Rosen and Dorothy Lam. Site designed by Pilar Gomez Ruiz
+*   CSS style guide template adapted from Harry Roberts' CSS Guidelines (https://cssguidelin.es)
+
+ * ---CONTENTS---
+ * Body
+ * Header
+ * Navigation
+ * Main
+ * Section.............general attributes of 'section' element
+ * Headings.............H1–H6 styles.
+ * Paragraph styles...........main 'p', intro, blockquote and lists
+ * Main...........The main content layout.
+ * Layout.............. general text wrappers
+ * Buttons..............Button elements.
+ * Sections by id..............Custom CSS for elements in different pages.
+
+
+ **/
+
+/*
+Body
+*/
+
+html{
+  max-width: 100%;
+  overflow-x: hidden
+}
+
+body {
+  margin: 0 auto;
+  /*background: #EFF0F9;*/
+  background: url("../img/background.png") center top;
+  background-size: cover;
+  text-align: left;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 20px;
+
+
+
+}
+
+/*
+Header
+*/
+
+header{
+width: 100vw;
+height: 20vh;
+background: #2e2e2e;
+align-items: center;
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+/*
+Navigation
+*/
+nav {
+  margin: 0 auto;
+  position: fixed;
+  background: #2e2e2e;
+  width: 100vw;
+  padding: 20px 0 40px 0;
+  z-index:9999;
+  display: none;
+}
+
+nav ul {
+  margin: 0 auto;
+  padding: 10px;
+
+  }
+
+nav li {
+  margin: 0 auto;
+  display: inline;
+  padding-right: 10px;
+
+  }
+nav li a:link {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+nav li a:active {
+  text-decoration: underline;
+  color: #c973c8;
+}
+
+#nav-logo{
+ float: left;
+}
+#nav-links{
+ float: right;
+ position: relative;
+ top: -8px;
+}
+
+
+/*
+Main
+*/
+main {
+  margin: 0 auto;
+  border-top-color: 0;
+}
+
+/*
+Section
+*/
+
+section {
+margin: 0 auto;
+/*background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat; */
+padding-top: 80px;
+
+}
+
+/*------------------------------------*\
+  #Headings
+\*------------------------------------*/
+
+h1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 200;
+  font-size: 55px;
+  color: #580357;
+  margin: 0px 0 10px 0;
+}
+
+h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #bbbbbb;
+  margin: 0px 0 10px 0;
+}
+
+h3 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #2e2e2e;
+  margin: 0px 0 10px 0;
+}
+
+/*------------------------------------*\
+  #Paragraph styles
+\*------------------------------------*/
+
+p {
+  color: #2e2e2e;
+  margin: 0px 0 30px 0;
+  text-align: left;
+}
+
+/*
+Introductory Paragraph
+*/
+.intro{
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: 26px;
+  text-align: center;
+  color: #2e2e2e;
+  margin: 0px 0 20px 0;
+}
+
+blockquote{
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: italic;
+  font-size: 26px;
+  text-align: center;
+  color: #2e2e2e;
+  margin: 0px 0 70px 0;
+}
+
+/*
+List styles
+*/
+
+
+
+
+/*------------------------------------*\
+  #LAYOUT
+\*------------------------------------*/
+
+/*
+General text wrapper
+*/
+
+.text-wrapper {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+
+
+
+/*------------------------------------*\
+  #Buttons & other Animations
+\*------------------------------------*/
+
+
+a.button:link  {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin:10px;
+  padding:8px;
+  background-color: none;
+  border: 2px solid #580357;
+  color:#580357;
+  text-decoration:none;
+}
+
+a.button:hover {
+
+  background-color: #c973c8;
+
+}
+
+a.button:active {
+
+  background-color: #580357;
+  color: #fff;
+
+}
+
+.button-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fadein {}
+
+/*------------------------------------*\
+  #Sections
+\*------------------------------------*/
+
+/*
+Start
+*/
+
+#start {
+  /* Parallax effect, only to be used in first section
+  source: Manuel Penaloza's CodePen excerpt at: https://codepen.io/manpenaloza/pen/RKQbpp
+   */
+  background: url("../img/start-cover.png") no-repeat center top;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  background-size: 100% ;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 0 0 10px 0;
+  border-color: #580357;
+}
+
+#white-square {
+  background-color: rgba(255,255,255,0.8);
+  margin: 0 auto;
+  padding:50px;
+
+}
+
+
+
+
+
+
+
+
+/*
+Why Refresh
+*/
+#why {
+  property: value;
+}
+
+/*
+About Us
+*/
+#about {
+  property: value;
+}
+
+/*
+Stay in touch /Contact
+*/
+#contact {
+margin: 0 auto;
+padding: 80px 0;
+}
+/*
+#contact p{
+margin: 20px 0 30px 0 ;
+}
+*/
