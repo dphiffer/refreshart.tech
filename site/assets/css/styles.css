@@ -48,7 +48,7 @@ Header
 
 header{
 width: 100vw;
-height: 20vh;
+height: 25vh;
 background: #2e2e2e;
 align-items: center;
 }
@@ -61,12 +61,15 @@ img.center {
 /*
 Navigation
 */
+
+
+
 nav {
   margin: 0 auto;
   position: fixed;
   background: #2e2e2e;
   width: 100vw;
-  padding: 20px 0 40px 0;
+  padding: 20px 0 30px 0;
   z-index:9999;
   display: none;
 }
@@ -169,6 +172,11 @@ p {
   text-align: left;
 }
 
+a {
+  color: #580357;3
+  text-decoration: underline;
+}3
+
 /*
 Introductory Paragraph
 */
@@ -250,7 +258,6 @@ a.button:active {
   justify-content: center;
 }
 
-.fadein {}
 
 /*------------------------------------*\
   #Sections
@@ -266,7 +273,7 @@ Start
    */
   background: url("../img/start-cover.png") no-repeat center top;
   width: 100vw;
-  height: 80vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
