@@ -56,6 +56,7 @@ align-items: center;
 img.center {
     display: block;
     margin: 0 auto;
+    padding: 15px;
 }
 
 /*
@@ -141,7 +142,7 @@ padding-top: 80px;
 h1 {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 200;
-  font-size: 55px;
+  font-size: 45px;
   color: #580357;
   margin: 0px 0 10px 0;
 }
