@@ -37,9 +37,16 @@ body {
   font-family: 'Lato';
   font-weight: 400;
   font-size: 20px;
+}
 
+p {
+  color: #2e2e2e;
+  margin: 0px 0 30px 0;
+  text-align: left;
+}
 
-
+a {
+  color: #580357;
 }
 
 /*
@@ -104,6 +111,12 @@ nav li a:active {
   color: #c973c8;
 }
 
+
+nav li a:visited {
+  color: #fff;
+}
+
+
 #nav-logo{
  float: left;
 }
@@ -150,8 +163,8 @@ h1 {
 h2 {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 700;
-  font-size: 36px;
-  color: #bbbbbb;
+  font-size: 40px;
+  color: #580357;
   margin: 0px 0 10px 0;
 }
 
@@ -159,7 +172,7 @@ h3 {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 600;
   font-size: 28px;
-  color: #2e2e2e;
+  color: #aaadff;
   margin: 0px 0 10px 0;
 }
 
@@ -167,16 +180,7 @@ h3 {
   #Paragraph styles
 \*------------------------------------*/
 
-p {
-  color: #2e2e2e;
-  margin: 0px 0 30px 0;
-  text-align: left;
-}
 
-a {
-  color: #580357;3
-  text-decoration: underline;
-}3
 
 /*
 Introductory Paragraph
@@ -197,7 +201,7 @@ blockquote{
   font-size: 26px;
   text-align: center;
   color: #2e2e2e;
-  margin: 0px 0 70px 0;
+  margin: 0 0 70px 0;
 }
 
 /*
@@ -253,12 +257,6 @@ a.button:active {
 
 }
 
-.button-grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 
 /*------------------------------------*\
   #Sections
@@ -298,23 +296,110 @@ Start
 
 
 
-
-
-
-
-
 /*
 Why Refresh
+(nothing yet)
 */
-#why {
-  property: value;
-}
+
+
 
 /*
 About Us
 */
-#about {
-  property: value;
+
+#organizers section {
+  margin-left: 30px;
+  padding: 5px 30px 20px 0;
+}
+
+
+#organizers img {
+  padding-right: 10px;
+}
+
+/* Author name links */
+#organizers h3:link {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #aaadff;
+  margin: 0px 30px 30px 0;
+}
+
+
+#organizers h3:hover {
+
+  color: #3399CC;
+
+}
+
+#organizers h3:active {
+
+  color: #CC66FF;
+}
+
+#organizers a{
+  color: inherit;
+  text-decoration: inherit;
+}
+
+ {
+  content: none;
+}
+
+#organizers a:hover {
+  position: relative;
+}
+#organizers a:hover:after {
+    content: url(../img/buttons/external-link-hover.gif); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: -30px; /* change this value to one that suits you */
+    top: -2px; /* change this value to one that suits you */
+
+}
+
+
+#asega {
+
+    //something here
+
+}
+
+#dewey-hagborg {
+
+    //something here
+
+}
+
+#wagenknecht {
+
+    //something here
+
+}
+
+#ribeaux {
+
+    //something here
+
+}
+
+#santos {
+
+    //something here
+
+}
+
+#high {
+
+    //something here
+
+}
+
+#hershman {
+
+    //something here
+
 }
 
 /*
@@ -324,8 +409,23 @@ Stay in touch /Contact
 margin: 0 auto;
 padding: 80px 0;
 }
-/*
-#contact p{
-margin: 20px 0 30px 0 ;
+
+#email{
+margin: 0 0 50px 0 ;
 }
-*/
+
+#update{
+margin: 0 0 50px 0 ;
+}
+
+#join{
+margin: 30px 0 20px 50px ;
+}
+
+#follow{
+margin: 0 0 20px 50px ;
+}
+
+#learn{
+margin: 20px 0 100px 0 ;
+}
