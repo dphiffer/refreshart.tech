@@ -4,7 +4,7 @@
 window.sr = ScrollReveal();
 sr.reveal('.fadein');
 
-
+/*
 //Following menu as user scrolls
 (function($) {
     $(document).ready(function(){
@@ -17,3 +17,4 @@ sr.reveal('.fadein');
         });
     });
 })(jQuery);
+*/
